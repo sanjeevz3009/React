@@ -12,11 +12,13 @@ class UserGreeting extends Component {
 
   render() {
 
+    // Short circuit operator
+
    return (
     this.state.isLoggedIn && <div>Welcome Sanjeev!</div>
    )
 
-    // Conditional operators approach (ternary operators)
+    // Conditional operators approach (ternary operator)
     // You would want to follow this approach most of the time
 
     // return (
@@ -34,6 +36,8 @@ class UserGreeting extends Component {
     // }
 
     // return <div>{message}</div>
+
+    // If/ else
 
     // if (this.state.isLoggedIn) {
     //     return (
