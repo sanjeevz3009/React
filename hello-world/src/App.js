@@ -1,23 +1,33 @@
-// import logo from './logo.svg';
-import React, { Component } from 'react';
-import './App.css';
-import Greet from './components/Greet';
-import Welcome from './components/Welcome';
-import Hello from './components/hello';
-import Message from './components/message';
-import Counter from './components/counter';
-import FunctionClick from './components/FunctionClick';
-import ClassClick from './components/ClassClick';
-import EventBind from './components/EventBind';
-import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
-import NameList from './components/NameList';
+// import logo from './logo.svg'
+import React, { Component } from 'react'
+import './App.css'
+import Greet from './components/Greet'
+import Welcome from './components/Welcome'
+import Hello from './components/hello'
+import Message from './components/message'
+import Counter from './components/counter'
+import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
+import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
+import NameList from './components/NameList'
+import Stylesheet from './components/Stylesheet'
+import Inline from './components/Inline'
+import './components/appStyles.css'
+import styles from './components/appStyles.module.css'
+import Form from './components/Form'
 
 class App extends Component {
   render () {
     return (
       <div className="App">
-      <NameList></NameList>
+      <Form></Form>
+      {/* <h1 className='error'>Error</h1> */}
+      {/* <h1 className={styles.success}>Success</h1> */}
+      {/* <Inline></Inline> */}
+      {/* <Stylesheet primary={true}></Stylesheet> */}
+      {/* <NameList></NameList> */}
       {/* <UserGreeting></UserGreeting> */}
       {/* <ParentComponent></ParentComponent> */}
       {/* <EventBind></EventBind> */}
@@ -35,8 +45,8 @@ class App extends Component {
         {/* <Welcome name="Diana" heroName="Wonder women"/> */}
         {/* <Hello></Hello> */}
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
