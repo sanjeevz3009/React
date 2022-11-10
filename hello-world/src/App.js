@@ -28,13 +28,18 @@ import FRParentInput from './components/FRParentInput'
 import PortalDemo from './components/PortalDemo'
 import Hero from './components/Hero'
 import ErrorBoundary from './components/ErrorBoundary'
+import ClickCounter from './components/ClickCounter'
+import HoverCounter from './components/HoverCounter'
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <div className="App">
 
-      <ErrorBoundary>
+        <ClickCounter></ClickCounter>
+        <HoverCounter></HoverCounter>
+
+        {/* <ErrorBoundary>
         <Hero heroName='Batman'></Hero>
       </ErrorBoundary>
 
@@ -44,31 +49,29 @@ class App extends Component {
 
       <ErrorBoundary>
         <Hero heroName='Joker'></Hero>
-      </ErrorBoundary>
+      </ErrorBoundary> */}
 
-
-      
-      {/* <PortalDemo></PortalDemo> */}
-      {/* <FRParentInput></FRParentInput> */}
-      {/* <FocusInput></FocusInput> */}
-      {/* <RefsDemo></RefsDemo> */}
-      {/* <ParentComp></ParentComp> */}
-      {/* <Table></Table> */}
-      {/* <FragmentDemo></FragmentDemo> */}
-      {/* <LifecycleA></LifecycleA> */}
-      {/* <Form></Form> */}
-      {/* <h1 className='error'>Error</h1> */}
-      {/* <h1 className={styles.success}>Success</h1> */}
-      {/* <Inline></Inline> */}
-      {/* <Stylesheet primary={true}></Stylesheet> */}
-      {/* <NameList></NameList> */}
-      {/* <UserGreeting></UserGreeting> */}
-      {/* <ParentComponent></ParentComponent> */}
-      {/* <EventBind></EventBind> */}
-      {/* <FunctionClick></FunctionClick> */}
-      {/* <ClassClick></ClassClick> */}
-      {/* <Counter /> */}
-      {/* <Message /> */}
+        {/* <PortalDemo></PortalDemo> */}
+        {/* <FRParentInput></FRParentInput> */}
+        {/* <FocusInput></FocusInput> */}
+        {/* <RefsDemo></RefsDemo> */}
+        {/* <ParentComp></ParentComp> */}
+        {/* <Table></Table> */}
+        {/* <FragmentDemo></FragmentDemo> */}
+        {/* <LifecycleA></LifecycleA> */}
+        {/* <Form></Form> */}
+        {/* <h1 className='error'>Error</h1> */}
+        {/* <h1 className={styles.success}>Success</h1> */}
+        {/* <Inline></Inline> */}
+        {/* <Stylesheet primary={true}></Stylesheet> */}
+        {/* <NameList></NameList> */}
+        {/* <UserGreeting></UserGreeting> */}
+        {/* <ParentComponent></ParentComponent> */}
+        {/* <EventBind></EventBind> */}
+        {/* <FunctionClick></FunctionClick> */}
+        {/* <ClassClick></ClassClick> */}
+        {/* <Counter /> */}
+        {/* <Message /> */}
         {/* <Greet name="Bruce" heroName="Batman"></Greet>
           <p>This is children props</p>
         <Greet name="Clark" heroName="Superman"></Greet>
