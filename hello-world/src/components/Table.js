@@ -8,7 +8,7 @@ function Table() {
             <tr>
                 <Columns></Columns>
             </tr>
-        </tbody>
+      </tbody>
     </table>
   )
 }
