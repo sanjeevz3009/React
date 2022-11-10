@@ -25,12 +25,31 @@ import ParentComp from './components/ParentComp'
 import RefsDemo from './components/RefsDemo'
 import FocusInput from './components/FocusInput'
 import FRParentInput from './components/FRParentInput'
+import PortalDemo from './components/PortalDemo'
+import Hero from './components/Hero'
+import ErrorBoundary from './components/ErrorBoundary'
 
 class App extends Component {
   render () {
     return (
       <div className="App">
-      <FRParentInput></FRParentInput>
+
+      <ErrorBoundary>
+        <Hero heroName='Batman'></Hero>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName='Superman'></Hero>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName='Joker'></Hero>
+      </ErrorBoundary>
+
+
+      
+      {/* <PortalDemo></PortalDemo> */}
+      {/* <FRParentInput></FRParentInput> */}
       {/* <FocusInput></FocusInput> */}
       {/* <RefsDemo></RefsDemo> */}
       {/* <ParentComp></ParentComp> */}
